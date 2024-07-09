@@ -9,8 +9,6 @@ const MainListSelectionWithButton = () => {
   const [page3Check, setPage3Check] = useState(false);
   const [page4Check, setPage4Check] = useState(false);
 
-  // console.log(allPagesCheck);
-
   useEffect(() => {
     if (allPagesCheck === true) {
       setPage1Check(true);
@@ -25,7 +23,10 @@ const MainListSelectionWithButton = () => {
     }
   }, [allPagesCheck]);
 
-  console.log(page1Check);
+  const handleClick = () => {
+    setAllPagesCheck(false);
+  };
+
   return (
     <div className="bg-white rounded-[6px] shadow-md flex flex-col items-center gap-[10px] p-[10px]">
       <ListCard
@@ -73,6 +74,7 @@ const MainListSelectionWithButton = () => {
         <Buttons
           buttonName="Done"
           color="hover:bg-[#FFD84D] bg-[#FFCE22] active:bg-[#FFCE22]"
+          onClick={handleClick}
         />
       </button>
     </div>

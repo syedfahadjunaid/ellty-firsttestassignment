@@ -13,6 +13,7 @@ const Home = () => {
         <Buttons buttonName="Done" color="bg-[#FFD84D]" />
         <Buttons buttonName="Done" color="bg-[#FFCE22]" />
       </div>
+
       {/* Checkboxes */}
       <div className="checkboxSection flex flex-col border-[#9747ff] border-[1px] border-dashed p-[10px] h-fit rounded-[4px]">
         <Checkbox
@@ -70,6 +71,7 @@ const Home = () => {
           checkboxBorder={"#BDBDBD"}
         />
       </div>
+
       {/* List Card */}
       <div className="listCardsSection flex flex-col gap-[20px] border-[#9747ff] border-[1px] border-dashed p-[10px] h-fit rounded-[4px]">
         <ListCard
@@ -129,6 +131,7 @@ const Home = () => {
           checkboxBorder={"#BDBDBD"}
         />
       </div>
+
       {/* Main List With Button */}
       <div className="mainListWithButton bg-white p-[2rem]">
         <MainListSelectionWithButton />

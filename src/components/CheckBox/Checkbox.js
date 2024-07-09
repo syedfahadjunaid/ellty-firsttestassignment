@@ -26,11 +26,19 @@ export default function Checkboxes({
   return (
     <div>
       <ThemeProvider theme={theme}>
-        <Checkbox
-          disabled={disabled}
-          checked={checked}
-          onChange={(e) => setChecked(e.target.checked)}
-        />
+        {setChecked ? (
+          <Checkbox
+            disabled={disabled}
+            checked={checked}
+            onChange={(e) => setChecked(e.target.checked)}
+          />
+        ) : (
+          <Checkbox
+            disabled={disabled}
+            defaultChecked={checked}
+            // onChange={(e) => setChecked && setChecked(e.target.checked)}
+          />
+        )}
       </ThemeProvider>
     </div>
   );
