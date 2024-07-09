@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import ListCard from "../ListCard/ListCard";
+import Buttons from "../Buttons/Buttons";
 
 const MainListSelectionWithButton = () => {
   const [allPagesCheck, setAllPagesCheck] = useState(false);
@@ -16,12 +17,17 @@ const MainListSelectionWithButton = () => {
       setPage2Check(true);
       setPage3Check(true);
       setPage4Check(true);
+    } else if (allPagesCheck === false) {
+      setPage1Check(false);
+      setPage2Check(false);
+      setPage3Check(false);
+      setPage4Check(false);
     }
   }, [allPagesCheck]);
 
   console.log(page1Check);
   return (
-    <div className="bg-white rounded-[6px] shadow-md flex flex-col gap-[10px] p-[10px]">
+    <div className="bg-white rounded-[6px] shadow-md flex flex-col items-center gap-[10px] p-[10px]">
       <ListCard
         text={"All pages"}
         disabled={false}
@@ -30,7 +36,7 @@ const MainListSelectionWithButton = () => {
         color={"#5087F8"}
         checkboxBorder={"#CDCDCD"}
       />
-      <div className="border"></div>
+      <div className="border w-full"></div>
       <ListCard
         text={"Page 1"}
         disabled={false}
@@ -63,6 +69,12 @@ const MainListSelectionWithButton = () => {
         color={"#5087F8"}
         checkboxBorder={"#CDCDCD"}
       />
+      <button className="flex flex-col items-center gap-[10px] border-t py-[20px] w-full cursor-default active:border-t-[3px]">
+        <Buttons
+          buttonName="Done"
+          color="hover:bg-[#FFD84D] bg-[#FFCE22] active:bg-[#FFCE22]"
+        />
+      </button>
     </div>
   );
 };
