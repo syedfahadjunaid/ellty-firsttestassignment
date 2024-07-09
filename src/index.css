@@ -34,3 +34,8 @@ code {
 .dashedBorder {
   border: 1px dashed #9747ff;
 }
+
+.checkBoxStyle {
+  height: 25px;
+  width: 25px;
+}
