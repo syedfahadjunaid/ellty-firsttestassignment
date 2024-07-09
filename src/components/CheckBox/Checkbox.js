@@ -2,8 +2,6 @@ import * as React from "react";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import Checkbox from "@mui/material/Checkbox";
 
-// const label = { inputProps: { "aria-label": "Checkbox demo" } };
-
 export default function Checkboxes({
   disabled,
   color,
@@ -15,9 +13,9 @@ export default function Checkboxes({
       MuiCheckbox: {
         styleOverrides: {
           root: {
-            color: checkboxBorder, // Default unchecked color
+            color: checkboxBorder,
             "&.Mui-checked": {
-              color: color, // Check color when checked
+              color: color,
             },
           },
         },

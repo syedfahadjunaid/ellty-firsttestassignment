@@ -12,6 +12,7 @@ body {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+  background: #e5e4e2;
 }
 
 code {
@@ -33,9 +34,4 @@ code {
 
 .dashedBorder {
   border: 1px dashed #9747ff;
-}
-
-.checkBoxStyle {
-  height: 25px;
-  width: 25px;
 }

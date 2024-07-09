@@ -1,6 +1,7 @@
 import React from "react";
 import Buttons from "../../components/Buttons/Buttons";
 import Checkbox from "../../components/CheckBox/Checkbox";
+import ListCard from "../../components/ListCard/ListCard";
 
 const Home = () => {
   return (
@@ -20,9 +21,9 @@ const Home = () => {
           checkboxBorder={"#CDCDCD"}
         />
         <Checkbox
-          disabled={true}
+          disabled={false}
           checked={true}
-          color={""}
+          color={"#BDBDBD"}
           checkboxBorder={"#BDBDBD"}
         />
         <Checkbox
@@ -56,15 +57,74 @@ const Home = () => {
           checkboxBorder={"#BDBDBD"}
         />
         <Checkbox
-          disabled={true}
+          disabled={false}
           checked={true}
-          color={""}
+          color={"#BDBDBD"}
           checkboxBorder={"#BDBDBD"}
         />
         <Checkbox
           disabled={false}
           checked={false}
           color={"blue"}
+          checkboxBorder={"#BDBDBD"}
+        />
+      </div>
+      {/* List Card */}
+      <div className="listCardsSection flex flex-col gap-[20px] border-[#9747ff] border-[1px] border-dashed p-[10px] h-fit rounded-[4px]">
+        <ListCard
+          text={"All pages"}
+          disabled={false}
+          checked={false}
+          color={"#5087F8"}
+          checkboxBorder={"#CDCDCD"}
+        />
+        <ListCard
+          text={"All pages"}
+          disabled={false}
+          checked={true}
+          color={"#BDBDBD"}
+          checkboxBorder={"#BDBDBD"}
+        />
+        <ListCard
+          text={"All pages"}
+          disabled={false}
+          checked={true}
+          color={"#BDBDBD"}
+          checkboxBorder={"#BDBDBD"}
+        />
+        <ListCard
+          text={"All pages"}
+          disabled={false}
+          checked={true}
+          color={"#5087F8"}
+          checkboxBorder={""}
+        />
+        <ListCard
+          text={"All pages"}
+          disabled={false}
+          checked={true}
+          color={"#2469F6"}
+          checkboxBorder={"#BDBDBD"}
+        />
+        <ListCard
+          text={"All pages"}
+          disabled={false}
+          checked={true}
+          color={"#5087F8"}
+          checkboxBorder={"#BDBDBD"}
+        />
+        <ListCard
+          text={"All pages"}
+          disabled={false}
+          checked={true}
+          color={"#2469F6"}
+          checkboxBorder={"#BDBDBD"}
+        />
+        <ListCard
+          text={"All pages"}
+          disabled={true}
+          checked={true}
+          color={"#BDBDBD"}
           checkboxBorder={"#BDBDBD"}
         />
       </div>
