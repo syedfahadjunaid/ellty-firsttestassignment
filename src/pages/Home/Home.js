@@ -2,6 +2,7 @@ import React from "react";
 import Buttons from "../../components/Buttons/Buttons";
 import Checkbox from "../../components/CheckBox/Checkbox";
 import ListCard from "../../components/ListCard/ListCard";
+import MainListSelectionWithButton from "../../components/MainListSelectionWithButton/MainListSelectionWithButton";
 
 const Home = () => {
   return (
@@ -127,6 +128,10 @@ const Home = () => {
           color={"#BDBDBD"}
           checkboxBorder={"#BDBDBD"}
         />
+      </div>
+      {/* Main List With Button */}
+      <div className="mainListWithButton bg-white p-[2rem]">
+        <MainListSelectionWithButton />
       </div>
     </div>
   );

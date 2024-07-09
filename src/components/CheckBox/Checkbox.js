@@ -7,6 +7,7 @@ export default function Checkboxes({
   color,
   checkboxBorder,
   checked,
+  setChecked,
 }) {
   const theme = createTheme({
     components: {
@@ -25,7 +26,11 @@ export default function Checkboxes({
   return (
     <div>
       <ThemeProvider theme={theme}>
-        <Checkbox disabled={disabled} defaultChecked={checked} />
+        <Checkbox
+          disabled={disabled}
+          checked={checked}
+          onChange={(e) => setChecked(e.target.checked)}
+        />
       </ThemeProvider>
     </div>
   );
