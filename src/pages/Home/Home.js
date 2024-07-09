@@ -15,7 +15,7 @@ const Home = () => {
       </div>
 
       {/* Checkboxes */}
-      <div className="checkboxSection flex flex-col border-[#9747ff] border-[1px] border-dashed p-[10px] h-fit rounded-[4px]">
+      <div className="checkboxSection flex flex-col border-[#9747ff] gap-[10px] border-[1px] border-dashed p-[10px] h-fit rounded-[4px]">
         <Checkbox
           disabled={false}
           checked={false}
