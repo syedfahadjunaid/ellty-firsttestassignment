@@ -15,11 +15,11 @@ const Home = () => {
       </div>
 
       {/* Checkboxes */}
-      <div className="checkboxSection flex flex-col border-[#9747ff] gap-[10px] border-[1px] border-dashed p-[10px] h-fit rounded-[4px]">
+      <div className="checkboxSection flex flex-col border-[#9747ff] gap-[20px] border-[1px] border-dashed p-[10px] h-fit rounded-[4px]">
         <Checkbox
           disabled={false}
           checked={false}
-          color={"#BDBDBD"}
+          color={"white"}
           checkboxBorder={"#CDCDCD"}
         />
         <Checkbox
@@ -31,7 +31,7 @@ const Home = () => {
         <Checkbox
           disabled={false}
           checked={true}
-          color={"#5087F8"}
+          color={"white"}
           checkboxBorder={"#BDBDBD"}
         />
         <Checkbox
@@ -92,7 +92,7 @@ const Home = () => {
           text={"All pages"}
           disabled={false}
           checked={true}
-          color={"#BDBDBD"}
+          color={"white"}
           checkboxBorder={"#BDBDBD"}
         />
         <ListCard
@@ -125,9 +125,9 @@ const Home = () => {
         />
         <ListCard
           text={"All pages"}
-          disabled={true}
+          disabled={false}
           checked={true}
-          color={"#BDBDBD"}
+          color={"white"}
           checkboxBorder={"#BDBDBD"}
         />
       </div>
