@@ -38,7 +38,7 @@ const Home = () => {
           disabled={false}
           checked={true}
           color={"#5087F8"}
-          checkboxBorder={""}
+          checkboxBorder={"#BDBDBD"}
         />
         <Checkbox
           disabled={false}
@@ -61,13 +61,13 @@ const Home = () => {
         <Checkbox
           disabled={false}
           checked={true}
-          color={"#BDBDBD"}
+          color={"white"}
           checkboxBorder={"#BDBDBD"}
         />
         <Checkbox
           disabled={false}
           checked={false}
-          color={"blue"}
+          color={"white"}
           checkboxBorder={"#BDBDBD"}
         />
       </div>
