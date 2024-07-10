@@ -1,3 +1,38 @@
+import React from "react";
+import "./Checkbox.css";
+
+const Checkbox = ({ disabled, color, checkboxBorder, checked, setChecked }) => {
+  return (
+    <>
+      {setChecked ? (
+        <input
+          type="checkbox"
+          className={`w-[25px] h-[25px]`}
+          checked={checked}
+          disabled={disabled}
+          style={{
+            accentColor: color,
+          }}
+          onChange={(e) => setChecked(e.target.checked)}
+        />
+      ) : (
+        <input
+          type="checkbox"
+          className={`w-[25px] h-[25px] rounded-[6px]`}
+          // checked={checked}
+          defaultChecked={checked}
+          disabled={disabled}
+          style={{
+            accentColor: color,
+          }}
+        />
+      )}
+    </>
+  );
+};
+
+export default Checkbox;
+
 // import * as React from "react";
 // import { createTheme, ThemeProvider } from "@mui/material/styles";
 // import Checkbox from "@mui/material/Checkbox";
@@ -43,38 +78,3 @@
 //     </div>
 //   );
 // }
-
-import React from "react";
-import "./Checkbox.css";
-
-const Checkbox = ({ disabled, color, checkboxBorder, checked, setChecked }) => {
-  return (
-    <>
-      {setChecked ? (
-        <input
-          type="checkbox"
-          className={`w-[25px] h-[25px]`}
-          checked={checked}
-          disabled={disabled}
-          style={{
-            accentColor: color,
-          }}
-          onChange={(e) => setChecked(e.target.checked)}
-        />
-      ) : (
-        <input
-          type="checkbox"
-          className={`w-[25px] h-[25px]`}
-          // checked={checked}
-          defaultChecked={checked}
-          disabled={disabled}
-          style={{
-            accentColor: color,
-          }}
-        />
-      )}
-    </>
-  );
-};
-
-export default Checkbox;

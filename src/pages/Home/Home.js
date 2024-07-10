@@ -19,13 +19,13 @@ const Home = () => {
         <Checkbox
           disabled={false}
           checked={false}
-          color={"blue"}
+          color={"#BDBDBD"}
           checkboxBorder={"#CDCDCD"}
         />
         <Checkbox
           disabled={false}
           checked={true}
-          color={"#BDBDBD"}
+          color={"white"}
           checkboxBorder={"#BDBDBD"}
         />
         <Checkbox
@@ -85,7 +85,7 @@ const Home = () => {
           text={"All pages"}
           disabled={false}
           checked={true}
-          color={"#BDBDBD"}
+          color={"white"}
           checkboxBorder={"#BDBDBD"}
         />
         <ListCard

@@ -25,6 +25,10 @@ const MainListSelectionWithButton = () => {
 
   const handleClick = () => {
     setAllPagesCheck(false);
+    setPage1Check(false);
+    setPage2Check(false);
+    setPage3Check(false);
+    setPage4Check(false);
   };
 
   return (
